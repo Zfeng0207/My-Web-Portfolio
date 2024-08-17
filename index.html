@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <video autoplay muted loop id="myVideo">
+      <source src="./assets/tech_vid.mp4" type="video/mp4">
+    </video>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Tech Stack</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Loo Zfeng</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#internships" onclick="toggleMenu()">Internships</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__text">
+      <p class="section__text__p1">Hey there, I'm</p>
+      <p class="title">Loo Zfeng</p>
+      <p class="section__text__p2">Data Science Student In Monash University</p>
+      <div class="btn-container">
+      </div>
+      <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="btn1 btn-color-1"
+            onclick="location.href='https://www.linkedin.com/in/zfeng-loo-a62204294'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="btn1 btn-color-1"
+            onclick="location.href='https://github.com/Zfeng0207'"
+          />
+      </div>
+    </div>
+    </section>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/amazon india.jpg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Amazon India Sales Analysis with R</h2>
+            - Data Analysis on the influence that size, style and color has on the revenue generate for each SKU <br><br><br><br>
+            #R  #Data Analysis  #ETL
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Zfeng0207/Data-Analysis-Projects/blob/main/Medium%20Data%20analytic%20project.R'"
+              >
+              <img src="./assets/github.svg" alt="button icon" class="article .icon" />
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://medium.com/@loozfeng2704/data-analysis-of-amazon-india-sales-trends-a9d1c59ab049'"
+              >
+              <img src="./assets/medium-icon-svgrepo-com.svg" alt="button icon" class="article .icon" />
+            </button>
+            </div>
+          </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/airlincoln.jpg"
+            alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Passenger No-show Prediction with SASViya</h2>
+          - Predicting customer no-show with automl by choosing the champion model out of all range of classification models<br><br><br><br>
+          #MetricEvaluation #AutoML
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://medium.com/@loozfeng2704/predictive-modeling-for-airlincoln-budget-optimization-f45a1130a215'"
+          >
+          <img src="./assets/kaggle.svg" alt="button icon" class="article .icon" />
+          </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/music genre.png"
+            alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Music Genre Multiclass Classification with Optuna</h2>
+          - Auto hyperparameter tuning to find and finetune champion model to yield highest binary classification accuracy <br><br><br><br> 
+          #AutoHyperparametersTuning  
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Zfeng0207/Music-Genre-Prediction'"
+          >
+          <img src="./assets/github.svg" alt="button icon" class="article .icon" />
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section id="projects">
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/shopee.jpg"
+            alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Store Sales Time Series Forecasting</h2>
+          - Time Series Data Analysis and forecasting strategy trained on a blended model to identify sales pattern <br><br><br><br>
+          #TimeSeriesAnalysis  
+          <div class="btn-container">
+            <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Zfeng0207/Data-Analysis-Projects/blob/main/Medium%20Data%20analytic%20project.R'"
+              >
+              <img src="./assets/kaggle.svg" alt="button icon" class="article .icon" />
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/stock price.jpg"
+            alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Captii Stock Price Prediction with AWS</h2>
+          - Predicting stock prices using Amazon Sagemaker and Lambda end to end machine learning project <br><br><br><br>
+          #Sagemaker #Lambda   
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Zfeng0207/Captii-Stock-Price-Prediction-with-AWS'"
+          >
+          <img src="./assets/github.svg" alt="button icon" class="article .icon" />
+          </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/A_detailed_illustration_of_the_Titanic_ship.jpg"
+            alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Binary classification with Tensorflow Decision Forests</h2>
+          - Predicting the survivablity of a passenger on board the titanic with tensorflow decision forests <br><br><br><br>
+          #Tensorflow #DecisionForests         
+          <div class="btn-container">
+            <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+              <img src="./assets/kaggle.svg" alt="button icon" class="article .icon" />
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects-final">
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/pokemon.jpg"
+            alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Pokemon Computer Vision with OpenCV and Pillow</h2>
+          - Learning the basics of computer vision using OpenCV and Pillow library on Pokemon Images<br><br><br><br>
+          #ComputerVision #Pillow  
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+          <img src="./assets/kaggle.svg" alt="button icon" class="article .icon" />
+          </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/bwf.jpg"
+            alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">PandasAI Data Analysis on Badminton GOAT</h2>
+          - Data analysis using pandasAI intelligence ran on LLM OpenAI gpt4 to generate natural response <br><br><br><br> 
+          #PromptEngineer #ChainLit   
+          <div class="btn-container">
+            <button
+               class="btn btn-color-2 project-btn"
+               onclick="location.href='https://github.com/Zfeng0207/PandasAI'"
+             >
+             <img src="./assets/github.svg" alt="button icon" class="article .icon" />
+               </button>
+               <button
+               class="btn btn-color-2 project-btn"
+               onclick="location.href='https://medium.com/@loozfeng2704/badminton-data-analysis-with-pandasai-with-openai-gpt4-ce39f608206d'"
+             >
+             <img src="./assets/medium-icon-svgrepo-com.svg" alt="button icon" class="article .icon" />
+             </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+            src="./assets/A_cute_spider_crawling_over_a_website_interface_lazada.jpg"
+            alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Craw4ai AI Scraping Tool on Lazada Webpage</h2>
+          - AI webscraping tool on Llama3 Groq that auto adapts to web structure to turn html and javascript into csv data<br><br><br><br>
+          #Llama3 #Groq #Crawl4ai 
+          <div class="btn-container">
+            <button
+               class="btn btn-color-2 project-btn"
+               onclick="location.href='https://github.com/Zfeng0207/Crawl4AI-webscraper'"
+             >
+             <img src="./assets/github.svg" alt="button icon" class="article .icon" />
+           </button>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <p class="title">Tech Stack</p>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Languages</h2>
+          <div class="article-container">
+            <tech>
+              <img src="./assets/python.svg" alt="Experience icon" class="icon" />
+              <h3>Python</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/r-lang.svg" alt="Experience icon" class="icon" />
+              <h3>R</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/postgresql.svg" alt="Experience icon" class="icon" />
+              <h3>SQL</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/java-4.svg" alt="Experience icon" class="icon" />
+              <h3>Java</h3>
+              <m>Basic</m>
+            </tech>
+            <tech>
+              <img src="./assets/html-1.svg" alt="Experience icon" class="icon" />
+              <h3>HTML/JavaScript/CSS</h3>
+              <m>Intermediate</m>
+            </tech>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Libraries</h2>
+          <div class="article-container">
+            <tech>
+              <img src="./assets/dplyr.svg" alt="Experience icon" class="icon" />
+              <h3>Dplyr/Tidyverse</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/r-lang.svg" alt="Experience icon" class="icon" />
+              <h3>Ggplot2/Matplotlib</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/numpy-1.svg" alt="Experience icon" class="icon" />
+              <h3>Pandas/Numpy</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/scikitlearn-svgrepo-com.svg" alt="Experience icon" class="icon" />
+              <h3>Scikit-learn</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/pytorch-2.svg" alt="Experience icon" class="icon" />
+              <h3>Keras/Tensorflow/Pytorch </h3>
+              <m>Intermediate</m>
+            </tech>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Softwares</h2>
+          <div class="article-container">
+            <tech>
+              <img src="./assets/jira-3.svg" alt="Experience icon" class="icon" />
+              <h3>Jira</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/power-bi.svg" alt="Experience icon" class="icon" />
+              <h3>Microsoft BI/Excel</h3>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/gitlab.svg" alt="Experience icon" class="icon" />
+              <h3>Gitlab</h3>
+              <div></div>
+              <m>Advanced</m>
+            </tech>
+            <tech>
+              <img src="./assets/mongodb-icon-2.svg" alt="Experience icon" class="icon" />
+              <h3>Mongodb/Oracle/NoSQL</h3>
+              <m>Intermediate</m>
+            </tech>
+            <tech>
+              <img src="./assets/sas-6.svg" alt="Experience icon" class="icon" />
+              <h3>SAS Viya</h3>
+              <m>Advanced</m>
+            </tech>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+   <section id="internships">
+    <p class="section__text__p1">Dive Into My</p>
+    <p class="title">Internships</p>
+     <div class="experience-details-container">
+       <div class="about-containers">
+         <div class="details-container color-container">
+           <div class="article-container">
+            <img
+            src="./assets/globeoss.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+
+        <h1 class="intern-title">GlobeOSS</h1>
+        <h3 class= "intern-period">Internship Period: July 2024 - October 2024</h3>
+        <m>
+          - Involvement in data integration activities, ensuring accurate extraction, optimized 
+          transformation, maintain seamless flow and consolidation of data from diverse data
+          sources into the data ecosystem, while ensuring consistency and reliability. <br><br>
+          - Build, maintain, and deploy data products inclusive of data visualization (dashboards) for 
+          analytics and data science teams on-premise and across cloud platforms (e.g., GCP, AWS, 
+          Azure). <br><br>
+        </m>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://www.globeoss.com/'"
+          >
+          <img src="./assets/web-round-svgrepo-com.svg" alt="button icon" class="icon" />
+            Company Website            </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/merchantrade.png"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <h1 class="intern-title">Merchantrade Asia</h1>
+        <h3>Internship Period: Nov 2023 - Feb 2024</h3>
+        <m>
+            - Launched software testing for Enrich, MTA money mobile applications and Back Office for newly integrated Jompay and DuitNow RPP upgarde, <br><br>
+            - Authored the Jompay Functional Specification Document (FSD) and meticulously wrote test cases, playing a crucial role in quality assurance. <br><br>
+            - Collaborated on the successful deployment of the 2.0 version of the MTA app <br><br>
+          <m>
+          <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://mtradeasia.com/'"
+          >
+          <img src="./assets/web-round-svgrepo-com.svg" alt="button icon" class="icon" />
+          Company Website   
+        </button>     
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+      
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <p class="title">Contact Me</p>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon "
+            />
+            <a><a href="mailto:loozfeng2704@gmail.com">loozfeng2704@gmail.com</a></a>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <a><a href="https://www.linkedin.com/in/zfeng-loo-a62204294/">Zfeng Loo</a></a>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/whatsapp.svg"
+              alt="Whatsapp icon"
+              class="icon contact-icon"
+            />
+            <a><a href="https://wa.me/60123399246">+60123399246</a></a>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">TechStack</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Loo Zfeng. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

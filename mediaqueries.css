@@ -1,0 +1,415 @@
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+/* Medium devices (landscape tablets, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .section__text {
+    font-size: 1.2rem;
+  }
+
+  .details-container {
+    width: 45%;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intern-sub-title {
+    font-size: 1.2rem;
+  }
+
+  .btn-container {
+    justify-content: space-between;
+  }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  .section__text {
+    max-width: 600px;
+    padding: 0 1rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+
+  #projects-final {
+    margin-top: -2rem;
+    height: fit-content;
+  }
+
+  #experience {
+    height: fit-content;
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  .pic {
+    margin-right: -30rem;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 5vh;
+    margin: 0 1rem;
+    font-size: 0.1rem; /* Adjust this value to make the font size smaller */
+
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 0.5rem; /* Adjust this value to make the font size smaller */
+
+  }
+  
+
+  #profile {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .profile_title {
+    font-size: 2.5rem;
+  }
+
+  .section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .section-pic-container {
+    width: 610px;
+    height: 610px;
+    margin-top: -27px;
+    margin-left: -441px;
+  }
+
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  article {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .experience-level {
+    grid-column: 1;
+  }
+
+  #experience {
+    margin-top: 150px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 30px;
+    letter-spacing: 0.05rem;
+  }
+
+  p {
+    font-size: 1px;
+  }
+
+  b {
+    font-size: 8px;
+  }
+
+  .experience-details-container {
+    gap: 3px;
+  }
+
+  .experience-details-container1 {
+    margin-top: 8rem;
+    gap: 3px;
+  }
+
+
+  .experience-details-container h3, .experience-details-container p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #profile {
+    height: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .profile_title {
+    font-size: 1.8rem;
+  }
+
+  article {
+    font-size: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn {
+    padding: 0.25rem 0.5rem; /* Reduce padding to make the buttons smaller */
+    font-size: 8px; /* Decrease font size */
+    width: rem; /* Reduce button width */
+    border-radius: 1.5rem; /* Adjust border-radius */
+  }
+  .btn-container {
+    flex-wrap: wrap;
+    width: rem;
+  }
+
+  .contact-info-container {
+    margin: 0;
+    width: 7rem;
+
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 15px;
+    color: white;
+  }
+
+  nav,
+  .nav-links {
+    margin-top: -5px;
+    display: flex;
+    letter-spacing: 3px;
+  }
+
+  nav {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 1px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 0.5rem;
+    text-align: center;
+    padding-right: 30px;
+  }
+
+
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+
+  .intern-title {
+    font-size: 1.5rem;
+  }
+
+  .intern-sub-title {
+    
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 0px; /* Reduce padding inside the container */
+    padding-left: 0px; /* Reduce padding to decrease the gap */
+    padding-right: 0px; /* Reduce padding to decrease the gap */
+    line-height: 1.4; /* Reduce the line height */
+    margin-bottom: 1px; /* Reduce the bottom margin */
+  }
+
+  .intern-period {
+    font-size: 0.7rem;
+  }
+
+  .company-pic {
+    margin-left: 0;
+  }
+
+  .details-container {
+    padding: 0.5rem;
+    background: white;
+    border-radius: 0.5rem;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    text-align: center;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+
+  .about-img {
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .article-container {
+    gap: 1rem;
+  }
+  article {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+  }
+
+  .icon.contact-icon {
+      width: 20px; /* Reduce size for small devices */
+      height: 20px;
+      margin-left: 25px;
+  }
+  
+  article .icon {
+    
+    width: 30px;
+    height: 30px;
+    margin-right:10px;
+  }
+
+  .internship-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .internship-header {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .internship-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .internship-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+
+  .internship-period {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 0.5rem;
+  }
+
+  .internship-description {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  /* Media Queries */
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+  #myBtn {
+    width: 150px;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .content {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (landscape tablets, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  #myBtn {
+    width: 180px;
+    font-size: 17px;
+    padding: 9px;
+  }
+
+  .content {
+    padding: 18px;
+    font-size: 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 769px) {
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+  
+}
