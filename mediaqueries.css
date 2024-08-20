@@ -139,11 +139,18 @@
   }
 
   p {
-    font-size: 1px;
+    font-size: 100%;
+  }
+
+  c {
+    font-size: 150%;
   }
 
   b {
-    font-size: 8px;
+    font-size: 8;
+  }
+  m {
+    font-size: 120%;
   }
 
   .experience-details-container {
@@ -170,6 +177,16 @@
     margin-bottom: 3rem;
   }
 
+  .project-btn{
+    height: 10%;
+    width:10%;
+  }
+
+  .btn-color-2{
+    height: 20%;
+    width:20%;
+  }
+
   #profile {
     height: 20rem;
     margin-top: 10rem;
@@ -190,12 +207,12 @@
   .btn {
     padding: 0.25rem 0.5rem; /* Reduce padding to make the buttons smaller */
     font-size: 8px; /* Decrease font size */
-    width: rem; /* Reduce button width */
     border-radius: 1.5rem; /* Adjust border-radius */
   }
   .btn-container {
+ 
     flex-wrap: wrap;
-    width: rem;
+    padding-bottom: 20%;
   }
 
   .contact-info-container {
@@ -229,7 +246,7 @@
   }
 
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 200%;
   }
 
   .logo {
@@ -318,7 +335,7 @@
   
   article .icon {
     
-    width: 30px;
+    width: 30pxs;
     height: 30px;
     margin-right:10px;
   }
